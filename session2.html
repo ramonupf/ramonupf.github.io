@@ -1,47 +1,92 @@
-<body>
-    <h2>
-        Local audio
-    </h2>
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+    <div>
+        <h2>
+            Local audio
+        </h2>
+        <audio controls>
+            <source src="01-01_Dialog_1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div>
+        <h2>
+            Local video
+        </h2>
+    
+        <video width="600" height="400" controls>
+            <source src="video_file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div>
+        <h2>
+            Youtube video
+        </h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nHxXzMDmSEQ?si=L2A7SP15ijw4kN_j"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
 
-    <audio controls>
-        <source src="01-01_Dialog_1.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <div>
+        <h2>Contact form</h2>
+        <form method="post" action="server.php" enctype="multipart/form-data">
+            <label for="purpose">Purpose of contact:</label>
+            <select name="Purpose" required>
+                <option value="business">Business</option>
+                <option value="personal">Personal</option>
+            </select><br><br>
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" maxlength="50" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+            
+                    <!-- Preferred contact method -->
+        <label>Preferred contact method:</label><br>
+        <input type="radio" id="contact-email" name="contact_method" value="email" required>
+        <label for="contact-email">Email</label><br>
+        <input type="radio" id="contact-phone" name="contact_method" value="phone" required>
+        <label for="contact-phone">Phone</label><br><br>
+
+        <!-- Contact day(s) -->
+        <label>Contact day(s):</label><br>
+        <input type="checkbox" id="monday" name="contact_days" value="monday">
+        <label for="monday">Monday</label><br>
+        <input type="checkbox" id="tuesday" name="contact_days" value="tuesday">
+        <label for="tuesday">Tuesday</label><br>
+        <input type="checkbox" id="wednesday" name="contact_days" value="wednesday">
+        <label for="wednesday">Wednesday</label><br>
+        <input type="checkbox" id="thursday" name="contact_days" value="thursday">
+        <label for="thursday">Thursday</label><br>
+        <input type="checkbox" id="friday" name="contact_days" value="friday">
+        <label for="friday">Friday</label><br>
+        <input type="checkbox" id="saturday" name="contact_days" value="saturday">
+        <label for="saturday">Saturday</label><br>
+        <input type="checkbox" id="sunday" name="contact_days" value="sunday">
+        <label for="sunday">Sunday</label><br><br>
+
+        <!-- Attachment -->
+        <label for="attachment">Attachment:</label>
+        <input type="file" id="attachment" name="attachment"><br><br>
+
+        <!-- Message -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
 
 
-    <h2>
-        Local video
-    </h2>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear all">
+        </form>
+    </div>
+    </body>
+</html>
 
-    <video width="600" height="400" controls>
-        <source src="video_file.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <h2>
-        Youtube video
-    </h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/nHxXzMDmSEQ?si=L2A7SP15ijw4kN_j"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
-
-    <h2>Contact form</h2>
-    <form method="post" action="server.php" enctype="multipart/form-data">
-        <select name="Purpose" required>
-            <option value="business">Business</option>
-            <option value="personal">Personal</option>
-        </select>
-
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" maxlength="50" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-
-
-        <input type="submit" value="Submit">
-    </form>
-
-</body>
