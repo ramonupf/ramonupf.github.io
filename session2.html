@@ -1,0 +1,47 @@
+<body>
+    <h2>
+        Local audio
+    </h2>
+
+    <audio controls>
+        <source src="01-01_Dialog_1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <h2>
+        Local video
+    </h2>
+
+    <video width="600" height="400" controls>
+        <source src="video_file.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <h2>
+        Youtube video
+    </h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nHxXzMDmSEQ?si=L2A7SP15ijw4kN_j"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+
+    <h2>Contact form</h2>
+    <form method="post" action="server.php" enctype="multipart/form-data">
+        <select name="Purpose" required>
+            <option value="business">Business</option>
+            <option value="personal">Personal</option>
+        </select>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" maxlength="50" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
