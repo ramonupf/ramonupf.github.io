@@ -1,0 +1,50 @@
+/* Navigation bar styles */
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2f3542; /* Background color for the navigation bar */
+}
+
+header nav ul li {
+    float: left; /* Floats the list items horizontally */
+}
+
+header nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: #747d8c; /* Change background color on hover */
+}
+
+header nav ul li.active a { /* We use . because is a class defined by us */
+    background-color: #ff7f50; /* Background color for the active link */
+}
+
+header h1{
+    font-size: 2.5em;
+}
+
+header h2{
+    font-size: 2em;
+}
+
+.statement{
+    font-size: 1.2em;
+    color: #a4b0be;
+    font-style: italic;
+}
+
+#education tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+#education tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White background for odd rows */
+}

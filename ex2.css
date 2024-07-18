@@ -1,0 +1,34 @@
+ol li{
+    padding: 10px;
+    color: #2ed573;
+}
+
+ol li:first-child{
+    color: #ff4757;
+}
+
+ol li:last-child{
+    color: #3742fa;
+}
+
+p:first-of-type:first-line {
+    background-color: #ff6b81;
+}
+
+p:nth-of-type(2):first-line,
+p:nth-of-type(3)::first-line{
+    background-color: #70a1ff;
+}
+
+p::selection{
+    background-color: #eccc68;
+}
+
+input[name="name"]:required{
+    background-color: #ff6348;
+}
+
+input[name="email"]:required{
+    background-color: #ffa502;
+    
+}
