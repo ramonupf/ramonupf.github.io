@@ -1,0 +1,89 @@
+*{
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: #333;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position:sticky;
+}
+
+.topnav a{
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+}
+
+.topnav a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #333;
+    color: white;
+    position:static;
+}
+
+main {
+    padding: 20px;
+    margin: 10px 0px;
+}
+
+#left {
+    background-color: #f4f4f4;
+    width: 25%;
+    padding: 20px;
+    min-width: 250px;
+    margin-right: 20px;
+}
+
+#main-article{
+    padding: 20px;
+}
+
+#subscribe-form{
+    margin-top: 30px;
+}
+
+#fields{
+    width:100%;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .column {
+        flex: 1 1 48%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .column {
+        flex: 1 1 30%;
+    }
+}

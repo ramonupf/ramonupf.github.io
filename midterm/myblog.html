@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="myblog.css" type="text/css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <header>
+        <div class="profile-picture">
+            <img src="https://img.freepik.com/premium-vector/cartoon-boy-scout-holding-red-flag_29190-5842.jpg"
+                alt="Profile Picture">
+        </div>
+        <h1>My Blog</h1>
+    </header>
+
+    <main>
+        <aside id="left">
+            <h2>Recent Posts</h2>
+            <ul id="recent-posts">
+                <li>Post 1</li>
+                <li>Post 2</li>
+                <li>Post 3</li>
+              </ul>
+        </aside>
+        
+        <section id="main-article">
+            <h2>Main Article</h2>
+            <p class="article-text">
+                This is the main content area where the article will be displayed.
+            </p>
+        </section>
+        
+        <h3>Subscribe to Our Blog</h1>
+        <form id="subscribe-form" action="/submit-contact" method="post" enctype="multipart/form-data">
+            <div id="fields">
+                <label for="name">Name</label>
+                <br>
+                <input type="text" id="name" name="name">
+                <br>
+        
+                <label for="email">Email*</label>
+                <br>
+                <input type="email" id="email" name="email" required>
+                <br>
+            </div>
+            <button type="submit">Subscribe</button>
+            <button type="reset">Cancel</button>
+        </form>
+
+        <table id="subscribers-table">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Date Subscribed</th>
+            </tr>
+            <tr>
+                <td> John Doe</td>
+                <td>john@example.com</td>
+                <td>2024-08-01</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>jane@example.com</td>
+                <td>2024-08-01</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        © 2024 My Blog
+    </footer>
+</body>
+
+
+</html>
