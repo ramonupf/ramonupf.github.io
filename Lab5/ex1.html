@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Calculator</title>
+    <style>
+      div {
+        margin: 10px;
+      }
+      .error{
+        color: red;
+      }
+    </style>
+    <script src="ex1.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <input id="number1" placeholder="Number 1" type="number">
+    </div>
+    <div>
+      <input id="number2" placeholder="Number 2" type="number">
+    </div>
+    <div>
+      <input id="result" readonly type="number">
+    </div>
+    <div>
+      <input type="button" value=" + " onclick="apply(this.value);">
+      <input type="button" value=" - " onclick="apply(this.value);">
+      <input type="button" value=" * " onclick="apply(this.value);">
+      <input type="button" value=" / " onclick="apply(this.value);">
+    </div>
+    <div id="error" class="error"></div> <!-- Error message div -->
+  </body>
+</html>
