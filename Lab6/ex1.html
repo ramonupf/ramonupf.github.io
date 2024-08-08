@@ -16,11 +16,16 @@
                 padding: 10px;
                 text-align: left;
             }
+            .success-message {
+                display: none; /*by default no message*/
+                color: green;
+                padding: 10px;
+                margin-top: 10px;
+            }
         </style>
         <script src="ex1.js"></script>
     </head>
     <body>
-
         <table id="productTable">
             <thead>
                 <tr>
@@ -28,11 +33,31 @@
                     <th>Price</th>
                     <th>Quantity</th>
                     <th>Amount</th>
-                  </tr>
+                </tr>
             </thead>
             <tbody>
                 <!--new rows will be added here-->
             </tbody>
-        </table> 
+        </table>
+        
+        <div>
+            <label for="productName">Product Name</label><br>
+            <input type="text" id="productName"><br>
+        </div>
+        
+        <div>
+            <label for="number">Product Price</label><br>
+            <input type="number" id="price" step="any" min="0.01"><br>
+        </div>
+
+        <div>
+            <label for="quantity">Quantity</label><br>
+            <input type="number" id="quantity" min="1" step="1"><br>
+        </div>
+        
+        <button onclick="addRow()">Add</button>
+        <button class="clear-cart" onclick="clearCart()">Clear Cart</button>
+        <div id="successMessage" class="success-message"> </div>
+
     </body>
 </html>
